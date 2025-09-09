@@ -1,0 +1,11 @@
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(211,211,211,0.0),rgba(211,211,211,0.0)), url('../../assets/VC.png');
+    background-size: contain;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

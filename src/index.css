@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@
 }
 body{
     background: #F5F5F5;
+    background-color: #0a0a0a;
 }
 a{
     text-decoration: none;
@@ -32,8 +35,122 @@ a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth animation */
+}
+.btn:hover{
+    background: #c7c5c5;
+    transform: scale(1.05);
 }
 .btn img{
     width: 20px;
     margin-left: 10px;
+}
+.btn-clear {
+  background: transparent;
+  color: #c7c5c5; /* optional text color */
+}
+
+/* Hover effect for clear button */
+.btn-clear:hover {
+  background: rgba(199, 197, 197, 0.1);
+  transform: scale(1.05);
+}
+
+.btn-hero {
+    transform: scale(1.30);
+    font-weight: 300;
+  display: inline;
+    background: linear-gradient(
+      270deg,
+      #ffcccc,   /* very light red */
+      #ff6666,   /* warm medium red */
+      #cc3300,   /* deep red/orange */
+      #ff6666,   /* warm medium red */
+      #ffcccc    /* light red */
+    );
+
+  background-size: 1200% 100%;   /* wider for smoother animation */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 10s ease-in-out infinite;
+}
+
+@keyframes gradientFlow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.btn-hero:hover {
+    transform: scale(1.55);
+      -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.btn-about {
+    transform: scale(1.30);
+    font-weight: 300;
+  display: inline;
+    background: linear-gradient(
+      270deg,
+      #99e699,
+      #66cc66,   /* medium green */
+      #ccffcc,   /* light green */
+      #ff9999,   /* soft red */
+      #cc3333,   /* deeper red */
+      #66cc66,   /* back to medium green */
+      #ccffcc,    /* light green */
+      #99e699
+    );
+
+
+  background-size: 1200% 100%;   /* wider for smoother animation */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 10s ease-in-out infinite;
+}
+
+@keyframes gradientFlow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.btn-about:hover {
+    transform: scale(1.55);
+      -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.btn-projects {
+    transform: scale(1.30);
+    font-weight: 300;
+  display: inline;
+    background: linear-gradient(
+        270deg,
+        #99e6ff,   /* very light blue */
+        #66cccc,   /* teal */
+        #33ccff,   /* bright sky blue */
+        #006666,   /* deep teal */
+        #003366,   /* navy blue */
+        #33ccff,   /* bright sky blue */
+        #66cccc,   /* teal */
+        #99e6ff    /* very light blue */
+    );
+
+
+  background-size: 1200% 100%;   /* wider for smoother animation */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 10s ease-in-out infinite;
+}
+
+@keyframes gradientFlow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.btn-projects:hover {
+    transform: scale(1.55);
+      -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
