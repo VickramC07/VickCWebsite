@@ -1,6 +1,6 @@
 import './Navbar.css'
 import logo from '../../assets/SYSC.png'
-import useThemeFromSections from '../../Components/useThemeFromSections'
+import useThemeFromSections from '../../Components/UseThemeFromSections'
 
 const Navbar = () => {
   const theme = useThemeFromSections(); // 👈 get current theme
